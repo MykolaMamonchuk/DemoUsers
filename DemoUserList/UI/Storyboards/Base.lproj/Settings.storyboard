@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--SettingsVC-->
+        <scene sceneID="Wh7-sr-qLr">
+            <objects>
+                <tableViewController storyboardIdentifier="SettingsVC" id="RY9-cG-NCF" customClass="SettingsVC" customModule="DemoUserList" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" id="pUY-kZ-mJq">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" name="AcceptM"/>
+                        <color key="separatorColor" name="Title1"/>
+                        <sections>
+                            <tableViewSection id="muT-FT-qhx">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="2rb-hq-SwJ">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="70.333335876464844"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2rb-hq-SwJ" id="Kep-AE-YaI">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="70.333335876464844"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="faO-xC-kh9">
+                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="70.333333333333329"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="liI-t5-HkM">
+                                                            <rect key="frame" x="16" y="0.0" width="361" height="70.333333333333329"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dark mode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aph-rp-8bE">
+                                                                    <rect key="frame" x="0.0" y="0.3333333333333357" width="312" height="70"/>
+                                                                    <color key="backgroundColor" name="AcceptM"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="70" id="Y6b-xB-3hO"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                                                    <color key="textColor" name="Title1"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="484-af-439">
+                                                                    <rect key="frame" x="312" y="19.666666666666671" width="51" height="31"/>
+                                                                    <connections>
+                                                                        <action selector="onChangeDarkModeStateAction:" destination="RY9-cG-NCF" eventType="valueChanged" id="uxc-hD-TvL"/>
+                                                                    </connections>
+                                                                </switch>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" name="AcceptM"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="liI-t5-HkM" secondAttribute="bottom" id="V1K-3H-buw"/>
+                                                        <constraint firstItem="liI-t5-HkM" firstAttribute="top" secondItem="faO-xC-kh9" secondAttribute="top" id="YaA-yx-xIj"/>
+                                                        <constraint firstAttribute="trailing" secondItem="liI-t5-HkM" secondAttribute="trailing" constant="16" id="cRd-IH-cJT"/>
+                                                        <constraint firstItem="liI-t5-HkM" firstAttribute="leading" secondItem="faO-xC-kh9" secondAttribute="leading" constant="16" id="z0q-GF-qKZ"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" name="AcceptM"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="faO-xC-kh9" secondAttribute="trailing" id="6mH-O3-7q7"/>
+                                                <constraint firstItem="faO-xC-kh9" firstAttribute="leading" secondItem="Kep-AE-YaI" secondAttribute="leading" id="9mY-4P-wTf"/>
+                                                <constraint firstAttribute="bottom" secondItem="faO-xC-kh9" secondAttribute="bottom" id="Ng0-Pf-HvJ"/>
+                                                <constraint firstItem="faO-xC-kh9" firstAttribute="top" secondItem="Kep-AE-YaI" secondAttribute="top" id="xSD-Sy-hA9"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="RY9-cG-NCF" id="TkP-3I-k1u"/>
+                            <outlet property="delegate" destination="RY9-cG-NCF" id="Lsf-aU-GDL"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="darkModeSwitch" destination="484-af-439" id="Dad-dB-oMk"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ULc-9y-jCj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="714" y="-21"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AcceptM">
+            <color red="1" green="1" blue="0.97799999999999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="Title1">
+            <color red="0.59600001573562622" green="0.62699997425079346" blue="0.6589999794960022" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

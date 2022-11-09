@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  DemoUserList
+
+  Created by MMU on 09.11.2022.
+  
+*/
+
+"settings" = "إعدادات";
+"users" = "المستخدمين";
+"user_count_posts" = "المستخدم لديه %@";
+"post" = "بريد";
+"posts" = "المشاركات";

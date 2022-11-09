@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  DemoUserList
+
+  Created by MMU on 09.11.2022.
+  
+*/
+
+"settings" = "Settings";
+"users" = "Users";
+"user_count_posts" = "User has %@";
+"post" = "post";
+"posts" = "posts";
